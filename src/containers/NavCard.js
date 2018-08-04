@@ -8,14 +8,22 @@ class NavCard extends Component {
     this.state = {
       showCard: false,
     }
-    this.showCard = this.showCard.bind(this);    
+    this.showCard = this.showCard.bind(this); 
+    this.closeCard = this.closeCard.bind(this);   
   }
 
   showCard(event) {
     event.preventDefault()
 
     this.setState({
-      showCard: true 
+      showCard: true}, () => {
+        document.addEventListener('click', this.closeCard )      
+    });
+  }
+
+  closeCard() {
+    this.setState({showCard:false}, ()=> {
+      document.removeEventListener('click', this.closeCard)
     })
   }
 
