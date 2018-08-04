@@ -21,10 +21,13 @@ class NavCard extends Component {
     });
   }
 
-  closeCard() {
-    this.setState({showCard:false}, ()=> {
-      document.removeEventListener('click', this.closeCard)
-    })
+  closeCard(event) {
+    if (!this.navCardMenu.contains(event.target))
+    {
+      this.setState({showCard:false}, ()=> {
+        document.removeEventListener('click', this.closeCard)
+      })
+    }
   }
 
   render() {
@@ -35,7 +38,12 @@ class NavCard extends Component {
           </button>
         
         { this.state.showCard ? (
-          <div className="nav-card" >
+          <div 
+            className="nav-card" 
+            ref={(element)=> {
+              this.navCardMenu = element;
+            }}
+          >
             <h3> Voice </h3>
             <button>Inbound/Outbound</button>
             <button>Toll-Free Voice</button>
