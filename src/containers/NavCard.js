@@ -43,3 +43,5 @@ class NavCard extends Component {
     );
   }
 }
+
+export default NavCard;
