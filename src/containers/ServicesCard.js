@@ -1,6 +1,8 @@
 import React, {Component} from 'react' ;
 import Messaging from '../components/Messaging'
 import Voice from '../components/Voice'
+import EmerAccess from '../components/EmerAccess'
+import PhoneNumbers from '../components/PhoneNumbers'
 
 class ServicesCard extends Component {
   constructor() {
@@ -45,9 +47,11 @@ class ServicesCard extends Component {
               this.navCardMenu = element;
             }}
           >
-           
             <Voice/>  
             <Messaging/>
+            <EmerAccess/>
+            <PhoneNumbers/>
+
           </div>
 
           
