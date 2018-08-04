@@ -1,7 +1,8 @@
 import React, {Component} from 'react' ;
+import Messaging from '../components/Messaging'
+import Voice from '../components/Voice'
 
-
-class NavCard extends Component {
+class ServicesCard extends Component {
   constructor() {
     super()
 
@@ -44,12 +45,12 @@ class NavCard extends Component {
               this.navCardMenu = element;
             }}
           >
-            <h3> Voice </h3>
-            <button>Inbound/Outbound</button>
-            <button>Toll-Free Voice</button>
-            <button>Voice API</button>
-            <button>SIP Trunking</button>
+           
+            <Voice/>  
+            <Messaging/>
           </div>
+
+          
           ) 
           : (
             null
@@ -60,4 +61,4 @@ class NavCard extends Component {
   }
 }
 
-export default NavCard;
+export default ServicesCard;
