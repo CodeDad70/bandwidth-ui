@@ -26,3 +26,14 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.nav-card {
+  width: 10%;
+  background-color: rgb(43, 82, 5)
+}
+
+.menu {
+  width:100px;
+  height:100px;
+  
+}
