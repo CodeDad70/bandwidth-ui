@@ -20,17 +20,17 @@ class ResourcesHover extends React.Component {
   render() {
     return (
       <nav className="nav">
-        <ul className="nav__menu">
+        
           
-          <li
+          <div
             className="nav__menu-item"
             onMouseLeave={this.handleLeave}
           >
             <button onMouseEnter={this.handleHover}>Resources</button>
             { this.state.showResourcesMenu && <LearnMore/> }
-          </li>
+          </div>
          
-        </ul>
+        
       </nav>
     )
   }
