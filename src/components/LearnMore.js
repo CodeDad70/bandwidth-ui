@@ -4,7 +4,7 @@ const LearnMore  = () => (
   <div >
   
     <h3> Learn More </h3> 
-      Read articles, download guides or watch videos & webinars 
+      Find out more about what we do  
 
   </div>
 )

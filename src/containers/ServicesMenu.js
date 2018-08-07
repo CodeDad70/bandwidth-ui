@@ -1,17 +1,14 @@
 import React, {Component} from 'react' ;
-import Messaging from '../components/Messaging'
-import Voice from '../components/Voice'
-import EmerAccess from '../components/EmerAccess'
-import PhoneNumbers from '../components/PhoneNumbers'
+import Gallery from '../components/Gallery'
+import Contact from '../components/Contact'
 
 
 const ServicesMenu  = () => (
   <div className = "services" >
   
-      <Messaging/>
-      <Voice/>
-      <EmerAccess/>
-      <PhoneNumbers/>
+      <Gallery/>
+      <Contact/>
+      
 
   </div>
 )
