@@ -36,9 +36,9 @@ class ServicesCard extends Component {
   render() {
     return (
       <div>
-          <button onClick = {this.showCard}>
+          <a onClick = {this.showCard}>
             Services
-          </button>
+          </a>
         
         { this.state.showCard ? (
           <div 

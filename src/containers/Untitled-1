@@ -1,0 +1,11 @@
+   </a>
+            <div className="submenu-container">
+              <CSSTransitionGroup
+                transitionName="slide"
+                transitionEnterTimeout={300}
+                transitionLeaveTimeout={300}
+              >
+                { this.state.showAboutMenu && <Submenu /> }
+              </CSSTransitionGroup>
+            </div>
+          </li>

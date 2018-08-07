@@ -5,19 +5,15 @@ import ServicesCard from './containers/ServicesCard';
 import ResourcesCard from './containers/ResourcesCard';
 import ResourcesHover from './containers/ResourcesHover'
 import ServicesHover from './containers/ServicesHover'
+import NavHover from './containers/NavHover'
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Bandwidth UI sketch!</h1>
-        </header>
-        <p className="App-intro">
-         <ServicesHover/>
-         <ResourcesHover/>
-        </p>
+      <div >
+       <NavHover/>
+       
+        
       </div>
     );
   }

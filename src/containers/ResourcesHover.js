@@ -1,5 +1,5 @@
 import React, {Component} from 'react' ;
-import LearnMore from '../components/LearnMore'
+import ResourcesMenu from './ResourcesMenu'
 
 class ResourcesHover extends React.Component {
   constructor(props) {
@@ -19,19 +19,26 @@ class ResourcesHover extends React.Component {
   
   render() {
     return (
-      <nav className="nav">
+      <div className="element2"  >
+      
         
-          
+        
           <div
-            className="nav__menu-item"
+            
             onMouseLeave={this.handleLeave}
           >
-            <button onMouseEnter={this.handleHover}>Resources</button>
-            { this.state.showResourcesMenu && <LearnMore/> }
+          <button onMouseEnter={this.handleHover}>Resources</button>
+          
+          
+           <div key={'resources'} >
+            { this.state.showResourcesMenu && <ResourcesMenu/> }
+            </div>
+
           </div>
          
         
-      </nav>
+     
+      </div>
     )
   }
 }

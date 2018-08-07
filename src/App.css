@@ -37,3 +37,90 @@
   height:100px;
   
 }
+
+.container {
+  max-width: 24rem;
+  margin: 1rem auto;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
+
+.example-appear {
+  opacity: 0.01;
+}
+
+.example-appear.example-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}
+
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
+.navbar {
+  
+  width:40%;
+  
+ 
+  
+}
+
+.element1 {
+  width:100px;
+  display:inline-block;margin-right:10px;
+} 
+.element2 {
+  width:100px;
+  display:inline-block;
+  margin-left:20px;
+  margin-right:40px;
+} 
+
+.nav-element {
+  padding: 20px
+}
+
+.services {
+  width:40%;
+  padding: 20px
+}
+
+.resources {
+  width:40%;
+  padding:20px
+}

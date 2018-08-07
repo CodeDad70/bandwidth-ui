@@ -3,6 +3,12 @@ import Messaging from '../components/Messaging'
 import Voice from '../components/Voice'
 import EmerAccess from '../components/EmerAccess'
 import PhoneNumbers from '../components/PhoneNumbers'
+import ServicesMenu from './ServicesMenu'
+
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+
+
+
 
 class ServicesHover extends React.Component {
   constructor(props) {
@@ -22,26 +28,34 @@ class ServicesHover extends React.Component {
   
   render() {
     return (
-      <nav className="nav">
+      <div className= "element1">
         
           <div
-            className="nav__menu-item"
+           
             onMouseLeave={this.handleLeave}
           >
-            <button onMouseEnter={this.handleHover}>Services</button>
+      <a onMouseEnter={this.handleHover}>Services</a> 
+
+      <ReactCSSTransitionGroup
+          transitionName="example"
+          transitionEnterTimeout={500}
+          transitionLeaveTimeout={300}>
+
+            <div key={'test'}>
               { this.state.showServicesMenu && 
-              (<Messaging/>,
-              <Voice/>,
-              <EmerAccess/>,
-              <PhoneNumbers/>
-              )
+              <ServicesMenu/>
               }
+             </div> 
+            </ReactCSSTransitionGroup>
+
           </div>
          
         
-      </nav>
+      </div>
     )
+  
   }
 }
+
 
 export default ServicesHover;
